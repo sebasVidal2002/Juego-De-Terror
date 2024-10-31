@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
 public class Enemigo : MonoBehaviour
-
-    public int rutina;
-public float cronometro;
-public Animator ani;
-public Quaternion angulo;
-public float grado;
-
 {
+    public int rutina;
+    public float cronometro;
+    public Animator ani;
+    public Quaternion angulo;
+    public float grado;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +23,8 @@ public float grado;
     // Update is called once per frame
     void Update()
     {
-
+        Comportamiento_Enemigo();
     }
-
 
     public void Comportamiento_Enemigo()
     {
@@ -34,7 +36,7 @@ public float grado;
         }
         switch (rutina)
         {
-            case 0;
+            case 0:
                 ani.SetBool("walk", false);
                 break;
 
@@ -51,9 +53,5 @@ public float grado;
                 break;
         }
     }
-
-    void Update()
-    {
-        Comportamiento_Enemigo();
-    }
 }
+
