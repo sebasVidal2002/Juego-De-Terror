@@ -3,17 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - concrete
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Manija
   - Water
   - UI
   - Grab Ignore Ray
-  - 
-  - 
+  - Hands
+  - Ground
   - 
   - 
   - 
