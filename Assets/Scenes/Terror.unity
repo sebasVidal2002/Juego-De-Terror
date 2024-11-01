@@ -701,7 +701,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 46143b47bf2dd4249ac6a19fbc74b2c0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0039999485
+      value: -3.57
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 46143b47bf2dd4249ac6a19fbc74b2c0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -709,7 +709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 46143b47bf2dd4249ac6a19fbc74b2c0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.013962984
+      value: 0.675
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 46143b47bf2dd4249ac6a19fbc74b2c0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -751,6 +751,21 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 135ee792de3f2f547951a46df4f0e4f3, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 46143b47bf2dd4249ac6a19fbc74b2c0, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'mixamorig:Hips'\n\tTransform 'mixamorig:LeftFoot'\n\tTransform
+        'mixamorig:LeftHandThumb2'\n\tTransform 'mixamorig:LeftHandIndex1'\n\tTransform
+        'mixamorig:LeftHandPinky2'\n\tTransform 'mixamorig:RightHandRing2'\n\tTransform
+        'mixamorig:Spine1'\n\tTransform 'mixamorig:LeftToeBase'\n\tTransform 'mixamorig:LeftHandThumb3'\n\tTransform
+        'mixamorig:RightArm'\n\tand more ...\n\tFrom animation clip 'mixamo.com'\n\tFrom
+        animation clip 'mixamo.com'\n\tFrom animation clip 'mixamo.com'"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 46143b47bf2dd4249ac6a19fbc74b2c0, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -768,6 +783,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 823430334}
   m_SourcePrefab: {fileID: 100100000, guid: 46143b47bf2dd4249ac6a19fbc74b2c0, type: 3}
+--- !u!95 &94969115 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 46143b47bf2dd4249ac6a19fbc74b2c0, type: 3}
+  m_PrefabInstance: {fileID: 94969114}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &108440155
 GameObject:
   m_ObjectHideFlags: 0
@@ -3721,9 +3741,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rutina: 0
   cronometro: 0
-  ani: {fileID: 0}
+  ani: {fileID: 94969115}
   angulo: {x: 0, y: 0, z: 0, w: 0}
   grado: 0
+  target: {fileID: 1175823179}
 --- !u!1 &825983281
 GameObject:
   m_ObjectHideFlags: 0
